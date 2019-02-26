@@ -5,4 +5,4 @@ This repo is where is going to be files that I'm working on to learn the skills 
 
 
 * I'm learning:
-  ** HTML Canvas 
+  * HTML Canvas 

@@ -43,20 +43,26 @@ var c = canvas.getContext('2d');
 
 
 var x = 200;
+var y = 200;
 var raidius = 30;
 var dx = 5;
+var dy = 5;
 function animate(){
 	requestAnimationFrame(animate);
 	c.clearRect(0,0, innerWidth,innerHeight);
 	c.beginPath();
-	c.arc(x, 300, raidius, 0 , Math.PI *2, false);
+	c.arc(x, y, raidius, 0 , Math.PI *2, false);
 	c.strokeStyle = 'blue';
 	c.stroke();
 
 	if(x + raidius > innerWidth || x - raidius < 0){
 		dx=-dx;
 	}
+	if(y + raidius > innerHeight || y - raidius < 0){
+		dy=-dy;
+	}
 	x += dx;
+	y += dy;
 }
 
 animate();

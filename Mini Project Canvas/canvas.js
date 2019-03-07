@@ -6,8 +6,36 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-function Person(){
+
+
+// creates the body parts
+var Head = new Head(200,200,30);
+var Body = new Body(170,230,60,100);
+var ArmLeft = new Arm(140,230,30,100);
+var ArmRight = new Arm(230,230,100,30);
+var LegLeft = new Leg(200,330,30,100);
+var LegRight = new Leg(170,330,30,100);
+var Person = new Person(Head,Body,ArmLeft,ArmRight,LegLeft,LegRight);
+
+function Person(Head,Body,ArmLeft,ArmRight,LegLeft,LegRight){
+	this.Head = Head;
+	this.Body = Body;
+	this.ArmLeft = ArmLeft;
+	this.ArmRight = ArmRight;
+	this.LegLeft = LegLeft;
+	this.LegRight = LegRight;
+
 	// the person itself
+	this.draw = function(){
+		this.Head.draw();
+		this.Body.draw();
+		this.ArmLeft.draw();
+		this.ArmRight.draw();
+		this.LegLeft.draw();
+		this.LegRight.draw();
+	}
+	
+	
 }
 
 // this is the head
@@ -82,23 +110,19 @@ function Leg(x,y,w,h){
  	}
 }
 
-// creates the body parts
-var Head = new Head(200,200,30);
-var Body = new Body(170,230,60,100);
-var ArmLeft = new Arm(140,230,30,100);
-var ArmRight = new Arm(230,230,100,30);
-var LegLeft = new Leg(200,330,30,100);
-var LegRight = new Leg(170,330,30,100);
 
 // start the animation per say
 function animate(){
 	requestAnimationFrame(animate);
-	Head.draw();
-	Body.draw();
-	ArmLeft.draw();
-	ArmRight.draw();
-	LegLeft.draw();
-	LegRight.draw();
+	Person.draw();
 }
+
+
+// Event listeners 
+// first stages
+window.addEventListener('movemove',function(){
+	console.log("Me!");
+});
+
 
 animate();

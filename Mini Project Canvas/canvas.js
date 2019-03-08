@@ -34,7 +34,16 @@ function Person(Head,Body,ArmLeft,ArmRight,LegLeft,LegRight){
 		this.LegLeft.draw();
 		this.LegRight.draw();
 	}
-	
+	this.update = function(){
+		this.Head.x +=1;
+		this.Body.x +=1;
+		this.ArmLeft.x +=1;
+		this.ArmRight.x +=1;
+		this.LegLeft.x +=1;
+		this.LegRight.x +=1;
+		this.draw();
+
+	}
 	
 }
 
@@ -114,7 +123,8 @@ function Leg(x,y,w,h){
 // start the animation per say
 function animate(){
 	requestAnimationFrame(animate);
-	Person.draw();
+	c.clearRect(0,0, innerWidth, innerHeight);
+	Person.update();
 }
 
 
@@ -122,6 +132,11 @@ function animate(){
 // first stages
 window.addEventListener('movemove',function(){
 	console.log("Me!");
+});
+
+window.addEventListener('resize', function(){
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
 });
 
 

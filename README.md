@@ -8,4 +8,4 @@ This repo is where is going to be files that I'm working on to learn the skills 
   * HTML5 Canvas 
 
 * What I've been working on:
- * Mini Project Canvas
+  * Mini Project Canvas

@@ -24,7 +24,7 @@ function Person(Head,Body,ArmLeft,ArmRight,LegLeft,LegRight){
 	this.ArmRight = ArmRight;
 	this.LegLeft = LegLeft;
 	this.LegRight = LegRight;
-
+	this.dx = 1;
 	// the person itself
 	this.draw = function(){
 		this.Head.draw();
@@ -35,12 +35,16 @@ function Person(Head,Body,ArmLeft,ArmRight,LegLeft,LegRight){
 		this.LegRight.draw();
 	}
 	this.update = function(){
-		this.Head.x +=1;
-		this.Body.x +=1;
-		this.ArmLeft.x +=1;
-		this.ArmRight.x +=1;
-		this.LegLeft.x +=1;
-		this.LegRight.x +=1;
+		if(this.ArmLeft.x > innerWidth){
+			this.ArmLeft.x  = -this.dx;
+		}
+		this.Head.x +=this.dx;
+		this.Body.x +=this.dx;
+		this.ArmLeft.x +=this.dx;
+		this.ArmRight.x +=this.dx;
+		this.LegLeft.x +=this.dx;
+		this.LegRight.x +=this.dx;
+		
 		this.draw();
 
 	}

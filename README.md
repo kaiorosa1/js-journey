@@ -11,4 +11,4 @@ Only the Basic and Intermidiate Algorithm Scripting since they are not lessons b
   * Javascript Algorithms And Data Structures (freeCodeCamp)
 
 * What I've been working on:
-  * Mini Project Canvas
+  * Mini Project Canvas (using HTML5 Canvas)

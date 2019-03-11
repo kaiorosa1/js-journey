@@ -1,0 +1,1 @@
+{"index.js":"function sumAll(arr) {\n  let total = 0;\n  // sort the array \n  arr = arr.sort((a,b)=> a-b);\n  //sum the range of number between the lowest to the highest\n  for( let i = arr[0];i <= arr[arr.length -1];i++){\n    total+= i;\n  }\n  return total;\n}\n\nconsole.log(sumAll([1, 4]));"}

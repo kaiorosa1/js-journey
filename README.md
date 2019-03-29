@@ -8,7 +8,6 @@ Only the Basic and Intermediate Algorithm Scripting since they are not lessons b
 
 
 * What I'm learning:
-  * Javascript Algorithms And Data Structures (freeCodeCamp)
+  * Front End Libraries Certification (freeCodeCamp)
 
-* What I've been working on:
-  * Mini Project Canvas (using HTML5 Canvas)
+

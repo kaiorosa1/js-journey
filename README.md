@@ -8,12 +8,12 @@ I'm documenting my journey towards being a JavaScript developer
    * Solution of JS challenges. 
    * Projects I've worked on. 
    * Free Code Camp challenges
-
-
-* Last Accomplishment:
+   
+##
+### Last Accomplishment:
   * JavaScript Algorithms And Data Structures (freeCodeCamp)
   
-* What I'm learning:
+### What I'm learning:
   * Front End Libraries Certification (freeCodeCamp)
 
 

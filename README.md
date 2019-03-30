@@ -1,12 +1,18 @@
 # js-journey
 
 
-This repo is where is going to be files that I'm working on to learn the skills to further apply in JavaScript projects.
-Recently I decided to put some of my fcc challenges here. 
+I'm documenting my journey towards being a JavaScript developer
 
-Only the Basic and Intermediate Algorithm Scripting since they are not lessons but exercises to pratice JS concepts.
+### Here you can find: 
+
+   * Solution of JS challenges. 
+   * Projects I've worked on. 
+   * Free Code Camp challenges
 
 
+* Last Accomplishment:
+  * JavaScript Algorithms And Data Structures (freeCodeCamp)
+  
 * What I'm learning:
   * Front End Libraries Certification (freeCodeCamp)
 

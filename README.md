@@ -10,10 +10,11 @@ I'm documenting my journey towards being a JavaScript developer
    * Free Code Camp challenges
    
 ##
-### Last Accomplishment:
+### Last Accomplishments:
   * JavaScript Algorithms And Data Structures (freeCodeCamp)
+  * Front End Libraries Certification (freeCodeCamp)
   
 ### What I'm learning:
-  * Front End Libraries Certification (freeCodeCamp)
+  * Apis And Microservices Certification (freeCodeCamp)
 
 
